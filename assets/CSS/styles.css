@@ -1,0 +1,350 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    color: -webkit-linear-gradient(to right, #33001b, #C41A80);
+    color: linear-gradient(to right, #33001b, #C41A80);
+    background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+    background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+    min-height: 110px;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    z-index: 99;
+}
+
+/* nav li */
+li {
+    display: inline;
+    flex-direction: row;
+    margin: 20px;
+    color: rgb(139, 0, 123);
+}
+
+h1 {
+    color: -webkit-linear-gradient(to right, #33001b, #C41A80);
+    color: linear-gradient(to right, #33001b, #C41A80);;
+}
+
+li :hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    color: #C41A80;
+}
+
+article {
+    max-width: 350px;
+    min-height: 408px;
+}
+
+/* about page with background */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: url(../Images/pexels-suzy-hazelwood-1629236.jpg);
+    background-size: cover;
+    background-size: 100%;
+    align-items: center;
+    justify-content: center;
+    block-size: fit-content;
+    padding-top: 175px;
+}
+
+/* row sections on about page */
+.rowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2px;
+}
+
+/* about boxes */
+.box {
+    background-color: rgb(139, 0, 123, 0.4);
+    margin: 3%;
+    border-radius: 10px;
+    padding: 2%;
+    display: block;
+    block-size: fit-content;
+    min-width: 400px;
+    min-height: 200px;
+    color: white;
+}
+
+/* card 1 "hi I'm rose" */
+#special-boxL {
+    background-color: #EBEFF0;
+    font-size: 30px;
+    margin-left: 0%;
+    margin-right: 100px;
+    margin-top: 4%;
+    padding-left: 10%;
+    display: block;
+    width: 600px;
+    min-height: 250px;
+    color: rgb(139, 0, 123);
+    border-radius: 0 10px 10px 0;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 2;
+}
+/* hi I'm rose */
+.textBox {
+    display: inline;
+    max-width: 150px;
+    max-height: 100px;
+} 
+
+/* avatar card */
+#special-boxR {
+    background-color: #EBEFF0;
+    margin-right: 0;
+    margin-left: 100px;
+    margin-bottom: 4%;
+    display: block;
+    width: 600px;
+    min-height: 250px;
+    color: rgb(139, 0, 123);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: end;
+    flex-shrink: 2;
+}
+
+#invisibleAvatar {
+    display: none;
+}
+
+img {
+    max-width: auto;
+    max-height: 225px;
+    border-radius: 15px;
+}
+
+/* section for project buttons */
+.myWork {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #CC95C0;
+    background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+    background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+    padding-left: 200px;
+    padding-right: 200px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* project buttons */
+.workItem {
+    height: 200px;
+    width: 200px;
+    background: #C41A80;
+    background: -webkit-linear-gradient(to right, #33001b, #C41A80);
+    background: linear-gradient(to right, #33001b, #C41A80);
+    margin: 5%;
+    padding: 5%;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+  }
+
+  .workItem:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    box-shadow: 0px 0px 25px #C41A8067;
+  }
+
+  /* header for my work section */
+  #workHeader{
+    height: 75px;
+    background-color: #CC95C0;
+    font-size: 20px;
+    text-align: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* section for form */
+  #formSection {
+    background-color: #CC95C0;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+/* contact form */
+  form{
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 5px solid;
+    border-color:#C41A80; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    resize: none; 
+  }
+  
+  /*submit button */
+  input[type=submit] {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #C41A80;
+  }
+  
+  /* button hover color change */
+  input[type=submit]:hover {
+    background-color:#7AA1D2;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    box-shadow: 0px 0px 25px #C41A8067;
+  }
+  
+/* foorer */
+  footer {
+    background: #CC95C0;
+    background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+    background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 75px;
+    padding-bottom: 100px;
+    width: 100%;
+  }
+
+  /* ipad size */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .rowContainer {
+        flex-direction: column;
+    }
+
+    #special-boxR {
+        display: none;
+    }
+
+    #special-boxL {
+        display: flex;
+        image-rendering: auto;
+        width: fit-content;
+        border-radius: 10px;
+        flex-direction: row;
+        margin-right: 0;
+        justify-content: space-between;
+        flex-shrink: 2;
+    }
+
+    .textBox {
+        max-width: 150px;
+        max-height: 100px;
+        margin: 0;
+        flex-direction: row;
+    }
+
+    #invisibleAvatar {
+        display: block;
+        height: 95%;
+        margin-bottom: 0;
+    }
+}
+
+/* phone size */
+@media screen and (max-width: 400px) {
+    .workItem {
+        height: 100px;
+        width: 100px;
+        background: #C41A80;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #33001b, #C41A80);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #33001b, #C41A80);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 5%;
+        border-radius: 10px;
+        justify-content: center;
+        text-align: center;
+        font-size: 10px;
+        flex-shrink: 2;
+    }
+    .myWork {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background: #CC95C0;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    
+    }
+    header, footer, .container {
+        width: 100%;
+    }
+
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #special-boxL {
+        display: flex;
+        image-rendering: auto;
+        width: fit-content;
+        border-radius: 10px;
+    }
+    .textBox {
+        max-width: 150px;
+        max-height: 100px;
+        margin: 0;
+        flex-direction: row;
+        font-size: 20px;
+    }
+    .box {
+        flex-shrink: 2;
+    }
+}

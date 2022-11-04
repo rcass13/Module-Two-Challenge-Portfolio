@@ -9,6 +9,7 @@ header {
     min-height: 110px;
     padding: 20px;
     font-size: 25px;
+    font-weight: 400;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -39,6 +40,7 @@ li :hover {
     -ms-transform: scale(1.2);
         transform: scale(1.2);
     color: #C41A80;
+    transition: 0.25s ease-in-out;
 }
 
 article {
@@ -163,7 +165,8 @@ img {
     text-align: center;
     font-size: 30px;
     -webkit-transition: all .2s ease-in-out;
-            transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    flex-shrink: 2;
   }
 
   .workItem:hover {
@@ -171,6 +174,7 @@ img {
     -ms-transform: scale(1.2);
         transform: scale(1.2);
     box-shadow: 0px 0px 25px #C41A8067;
+    /* transition: ease-in-out; */
   }
 
   /* header for my work section */
@@ -229,6 +233,7 @@ img {
     -ms-transform: scale(1.2);
         transform: scale(1.2);
     box-shadow: 0px 0px 25px #C41A8067;
+    transition: 0.25s ease-in-out;
   }
   
 /* foorer */
@@ -287,13 +292,14 @@ img {
 @media screen and (max-width: 400px) {
   
     header {
-        position: center;
+        position: static;
     }
    
     li {
         font-size: smaller;
         display: flex;
         flex-direction: column;
+        margin: 4px;
     }
 
 

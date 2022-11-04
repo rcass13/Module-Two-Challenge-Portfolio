@@ -285,9 +285,10 @@ img {
 
 /* phone size */
 @media screen and (max-width: 400px) {
-   h1 {
-    font-size: 20px;
-   }
+  
+    header {
+        position: center;
+    }
    
     li {
         font-size: smaller;
